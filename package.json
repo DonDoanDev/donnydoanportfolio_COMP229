@@ -20,24 +20,5 @@
     "jquery": "^3.6.3",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  },
-  "description": "demo app for COMP229 Week 3",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DonDoanDev/COMP229-W2023-WEEK3.git"
-  },
-  "keywords": [
-    "Duc",
-    "Anh",
-    "Quan",
-    "Doan"
-  ],
-  "author": "Duc Anh Quan Doan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DonDoanDev/COMP229-W2023-WEEK3/issues"
-  },
-  "homepage": "https://github.com/DonDoanDev/COMP229-W2023-WEEK3#readme"
+  }
 }

@@ -1,0 +1,46 @@
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %> 
+
+  <!-- Main Content-->
+  <div id="slider">
+  <div class="project" id="project1">
+    <h2>Bug Smasher Game</h2>
+    <p>Game that earns points by clicking on a hopping bug</p>
+  </div>
+  <div class="project" id="project2">
+    <h2>C# Application, Fraction Calculator</h2>
+    <p>Used C# to create a calculator that performs fraction operation and developed the GUI</p>
+  </div>
+  <div class="project" id="project3">
+    <h2>LEGO Tasks Solving Robot</h2>
+    <p>Designed a robot using LEGO Mindstorms set to deliver packages to the required destinations within a map efficiently and precisely</p>
+  </div>
+  <button id="previous">Previous</button>
+  <button id="next">Next</button>
+</div>
+<script> 
+    var projects = document.querySelectorAll(".project");
+    var currentProject = 0;
+
+    projects[currentProject].style.display = "block";
+
+    document.querySelector("#next").addEventListener("click", function() {
+        projects[currentProject].style.display = "none";
+        currentProject = (currentProject + 1) % projects.length;
+        projects[currentProject].style.display = "block";
+    });
+
+    document.querySelector("#previous").addEventListener("click", function() {
+        projects[currentProject].style.display = "none";
+        currentProject = (currentProject - 1 + projects.length) % projects.length;
+        projects[currentProject].style.display = "block";
+    });
+</script>
+
+
+
+
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

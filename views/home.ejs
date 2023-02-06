@@ -1,0 +1,35 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %> 
+
+  <!-- Main Content-->
+  <main>
+    <div id="welcome">
+      <h1 class="display-4" style="text-align: center;">Welcome to my <%= title %> Page</h1>
+      <p style="text-align: center;">My mission statement:</p>
+      <p style="text-align: center;">To provide a dynamic and user-friendly experience to all visitors
+        and to constantly strive for excellence in all aspects of my work.
+      </p>
+      <div style="text-align: center;"> 
+        <a href="/about"><button id="aboutMeBtn">About Me</button></a>
+        <a href="/projects"><button id="projectsBtn">My Projects</button></a>
+      </div>
+    </div> 
+    <div id="loader" style="text-align: center;">More updates are yet to come...</div>
+
+    
+  </main> 
+  <script>
+    const loader = document.querySelector("#loader");
+    let dots = 0;
+
+    const interval = setInterval(() => {
+      dots = (dots + 1) % 4;
+      loader.textContent = "More updates are yet to come" + ".".repeat(dots);
+    }, 500);
+
+
+  </script>
+
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

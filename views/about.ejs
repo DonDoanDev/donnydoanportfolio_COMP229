@@ -1,0 +1,29 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %> 
+
+  <!-- Main Content-->
+  <main>
+    <div id="profile">
+        <h1>Donny Doan</h1>
+        <img src="/Assets/images/donny.jpg" height="250" width = "200"alt="Donny Image">
+        <p>I am a highly motivated and dedicated individual with a passion for making a positive impact in the world. With my skills and experiences, I am well-equipped to tackle any challenge that comes my way.</p>
+        <a href="https://centennialcollegeedu-my.sharepoint.com/:b:/g/personal/ddoan10_my_centennialcollege_ca/EduPcYuFh7xOpZk9Uc8ykxYBkDVYgMC1uT0ag6PTZph8oQ?e=O7mFE6">
+            Download Resume</a>
+      </div>
+      
+      <script>
+        document.querySelector("#profile h1").textContent = "Donny Doan";
+        document.querySelector("#profile img").src = "/Assets/images/donny.jpg";
+        document.querySelector("#profile p").textContent = "I am a highly motivated and dedicated individual with a passion for making a positive impact in the world. With my skills and experiences, I am well-equipped to tackle any challenge that comes my way.";
+        document.querySelector("#profile a").href = "https://centennialcollegeedu-my.sharepoint.com/:b:/g/personal/ddoan10_my_centennialcollege_ca/EduPcYuFh7xOpZk9Uc8ykxYBkDVYgMC1uT0ag6PTZph8oQ?e=O7mFE6";
+
+      </script>
+
+  </main> 
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+
+
+

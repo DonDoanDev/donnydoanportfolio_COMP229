@@ -1,1 +1,128 @@
 /* custom css goes here */
+#welcome {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+
+  #profile {
+    text-align: center;
+  }
+
+  #profile a {
+    background-color: grey;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #profile a:hover {
+    background-color: black;
+    color: grey;
+  }
+
+  #slider {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+  }
+  
+  .project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+  
+  .project h2 {
+    margin-top: 100px;
+  }
+  
+  #previous,
+  #next {
+    background-color: #000080;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+  }
+  
+  #previous {
+    left: 20px;
+  }
+  
+  #next {
+    right: 20px;
+  }
+  
+  #previous:hover,
+  #next:hover {
+    background-color: #fff;
+    color: #000080;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 300px;
+    text-indent: 80px;
+  }
+
+  .service-icon {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  .service-name {
+    font-size: 24px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 100px;
+  }
+
+  .form-input {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .form-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
